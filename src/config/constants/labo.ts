@@ -2,20 +2,23 @@
 
 //----------------------------------------------------------------------------------------------------------------------------------------------
 
-// LABO ADDRESSES
+// BGSP ADDRESSES
 
 const laboBusdAddr = '0xB830Cc1bb2CdF44a6eb6898e8119455B87dA11FE'
 const laboBnbAddr = '0xAa23C415666Fc47E905886F2545BD40b0bc06fbA'
+const bgspBnbAddr = '0x66bffcac0782200d6276142768f79600a458bb04'
 const laboBusdAddrV2 = '0x9F7d34d03B0b56263705e1253EE83BF434509D6C'
 const laboBnbAddrV2 = '0xD08841b790A125888617cBa8395cc04B226d245F'
+const bgspBnbAddrV2 = '0x66bffcac0782200d6276142768f79600a458bb04'
 const laboAddr = '0x171401a3d18B21BFa3f9bF4F9637F3691158365A'
-const masterChef = '0x30f4cb706e65ABB3cbC3fFC2805E8Ff50eA8fbC8'
+const bgspAddr = '0xe9f861b22cd5240494ecc14afea02659ec59864f'
+const masterChef = '0x65FE214382fD9e0d6cF054EeD65C150C88ed6834'
 
 // LABO RELATED PIDS
 
 const pidLaboBusd = 20
-const pidLaboBnb = 21
-const pidLabo = 9
+const pidLaboBnb = 1
+const pidLabo = 0
 
 // OTHER PIDS THAT ARE REFERENCED THROUGHOUT THE CODE
 
@@ -28,14 +31,14 @@ const countLength = 2
 
 // CHANGE LABO FOR THE TOKEN BEIGN TESTED
 
-const xPerBlock = "laboPerBlock" // referenced in getMasterChefAddress()
-const pendingX = "pendingLabo"
+const xPerBlock = "BGSPPerBlock" // referenced in getMasterChefAddress()
+const pendingX = "pendingBGSP"
 
-// SEARCH AND REPLACE THIS STRING IF USING ANY OTHER THAN LABO: await masterChefContract.methods.pendingLabo in \src\state\pools\fetchPoolsUser.ts
+// SEARCH AND REPLACE THIS STRING IF USING ANY OTHER THAN LABO: await masterChefContract.methods.pendingBGSP in \src\state\pools\fetchPoolsUser.ts
 
 // USE OUR CUSTOM WAY OF FETCHING PRICE
 
-const fetchAutomatic = false;
+const fetchAutomatic = true;
 const fetchPriceCustom = false;
 
 // BitQuery RESPONSE POSITIONS

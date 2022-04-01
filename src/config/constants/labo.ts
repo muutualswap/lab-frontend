@@ -64,14 +64,19 @@ const labo = {
     addr: {
         laboBusdAddr,
         laboBnbAddr,
+        bgspBnbAddr,
         laboBusdAddrV2,
         laboBnbAddrV2,
+        bgspBnbAddrV2,
+        bgspAddr,
         laboAddr,
         masterChef,
     },
     pids: {
         pidLaboBusd, 
         pidLaboBnb,
+        pidbgspBnb,
+        pidbgsp,
         pidLabo,
         pidBnbBusd,
         pidList: [

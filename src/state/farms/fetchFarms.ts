@@ -105,7 +105,7 @@ const fetchFarms = async () => {
         },
         {
           address: getMasterChefAddress(),
-          name: labo.strings.xPerBlock,
+          name: bgsp.strings.xPerBlock,
         },
       ])
 

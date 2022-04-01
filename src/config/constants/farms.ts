@@ -209,24 +209,24 @@ const farms: FarmConfig[] = [
     version: 1
   },
   {
-    pid:bgsp.pids.pidList[1],
+    pid:labo.pids.pidList[1],
     risk: 5,
     lpSymbol: 'BGSP-BNB LP',
     lpAddresses: {
       97: '',
-      56: bgsp.addr.bgspBnbAddr, // (to BGSP BNB LP ) 
+      56: labo.addr.laboBnbAddr, // (to BGSP BNB LP ) 
     },
     tokenSymbol: 'BGSP',
     tokenAddresses: {
       97: '',
-      56: bgsp.addr.bgspAddr,
+      56: labo.addr.laboAddr,
     },
     quoteTokenSymbol: QuoteToken.BNB,
     quoteTokenAdresses: contracts.wbnb,
     version: 1
   },
   {
-    pid:bgsp.pids.pidList[2],
+    pid:labo.pids.pidList[2],
     risk: 5,
     lpSymbol: 'BSFE-BNB LP',
     lpAddresses: {

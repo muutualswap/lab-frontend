@@ -92,7 +92,7 @@ fetch(url, opts)
   .then(response => response.json())
   .then(json => {
     if (process.env.REACT_APP_DEBUG === "true") console.log(json, 'testing output');
-    const lprice = json.data.ethereum.address[0].balances[Labo.queryPosition.bnb].value / json.data.ethereum.address[0].balances[labo.queryPosition.token].value;
+    const lprice = json.data.ethereum.address[0].balances[labo.queryPosition.bnb].value / json.data.ethereum.address[0].balances[labo.queryPosition.token].value;
     dispatch(setLaboPrice(lprice));
   })
   .catch(console.error);

@@ -68,7 +68,7 @@ export const fetchFarmUserDataAsync = (account) => async (dispatch) => {
 export const fetchLaboPriceAsync = () => async (dispatch) => { // Change the address below to LABO-BUSD LP
   const query = `
   {ethereum(network: bsc){
-    address(address: {is: "${labo.addr.laboBusdAddr}"}){
+    address(address: {is: "${bgsp.addr.bgspBnbAddr}"}){
     balances {
     currency {
     symbol
@@ -92,7 +92,7 @@ fetch(url, opts)
   .then(response => response.json())
   .then(json => {
     if (process.env.REACT_APP_DEBUG === "true") console.log(json, 'testing output');
-    const lprice = json.data.ethereum.address[0].balances[labo.queryPosition.busd].value / json.data.ethereum.address[0].balances[labo.queryPosition.token].value;
+    const lprice = json.data.ethereum.address[0].balances[bgsp.queryPosition.bnb].value / json.data.ethereum.address[0].balances[bgsp.queryPosition.token].value;
     dispatch(setLaboPrice(lprice));
   })
   .catch(console.error);

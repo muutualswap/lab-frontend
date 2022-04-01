@@ -4,7 +4,7 @@ import labo  from './labo'
 
 
 const farms: FarmConfig[] = [
-  /*{
+  {
     pid:labo.pids.pidList[24],
     risk: 5,
     lpSymbol: 'LABO-BUSD LP',
@@ -20,7 +20,7 @@ const farms: FarmConfig[] = [
     quoteTokenSymbol: QuoteToken.BUSD,
     quoteTokenAdresses: contracts.busd,
     version: 2
-  },*/
+  },
   {
     pid:bgsp.pids.pidList[1],
     risk: 5,

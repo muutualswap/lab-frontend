@@ -27,12 +27,12 @@ const farms: FarmConfig[] = [
     lpSymbol: 'BGSP-BNB LP',
     lpAddresses: {
       97: '',
-      56: bgsp.addr.bgspBnbAddrV2, // (to BGSP BNB LP ) 
+      56: labo.addr.laboBnbAddrV2, // (to BGSP BNB LP ) 
     },
     tokenSymbol: 'BGSP',
     tokenAddresses: {
       97: '',
-      56: bgsp.addr.bgspAddr,
+      56: labo.addr.laboAddr,
     },
     quoteTokenSymbol: QuoteToken.BNB,
     quoteTokenAdresses: contracts.wbnb,

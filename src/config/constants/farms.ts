@@ -238,7 +238,7 @@ const farms: FarmConfig[] = [
       97: '',
       56: labo.addr.laboAddr,
     },
-    quoteTokenSymbol: QuoteToken.WBNB,
+    quoteTokenSymbol: QuoteToken.BNB,
     quoteTokenAdresses: contracts.wbnb,
     version: 1
   },

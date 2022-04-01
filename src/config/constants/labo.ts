@@ -17,8 +17,8 @@ const masterChef = '0x65FE214382fD9e0d6cF054EeD65C150C88ed6834'
 // LABO RELATED PIDS
 
 const pidLaboBusd = 20
-const pidbgspBnb = 1
-const pidbgsp = 0
+const pidLaboBnb = 1
+const pidLabo = 0
 
 // OTHER PIDS THAT ARE REFERENCED THROUGHOUT THE CODE
 
@@ -75,8 +75,6 @@ const labo = {
     pids: {
         pidLaboBusd, 
         pidLaboBnb,
-        pidbgspBnb,
-        pidbgsp,
         pidLabo,
         pidBnbBusd,
         pidList: [

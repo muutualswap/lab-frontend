@@ -4,7 +4,7 @@ import labo  from './labo'
 
 
 const farms: FarmConfig[] = [
-  {
+  /*{
     pid:labo.pids.pidList[24],
     risk: 5,
     lpSymbol: 'LABO-BUSD LP',
@@ -20,19 +20,19 @@ const farms: FarmConfig[] = [
     quoteTokenSymbol: QuoteToken.BUSD,
     quoteTokenAdresses: contracts.busd,
     version: 2
-  },
+  },*/
   {
-    pid:labo.pids.pidList[25],
+    pid:bgsp.pids.pidList[1],
     risk: 5,
-    lpSymbol: 'LABO-BNB LP',
+    lpSymbol: 'BGSP-BNB LP',
     lpAddresses: {
       97: '',
-      56: labo.addr.laboBnbAddrV2, // (to LABO BNB LP ) 
+      56: bgsp.addr.bgspBnbAddrV2, // (to BGSP BNB LP ) 
     },
-    tokenSymbol: 'LABO',
+    tokenSymbol: 'BGSP',
     tokenAddresses: {
       97: '',
-      56: labo.addr.laboAddr,
+      56: bgsp.addr.bgspAddr,
     },
     quoteTokenSymbol: QuoteToken.BNB,
     quoteTokenAdresses: contracts.wbnb,
@@ -209,37 +209,37 @@ const farms: FarmConfig[] = [
     version: 1
   },
   {
-    pid:labo.pids.pidList[1],
+    pid:bgsp.pids.pidList[1],
     risk: 5,
-    lpSymbol: 'LABO-BNB LP',
+    lpSymbol: 'BGSP-BNB LP',
     lpAddresses: {
       97: '',
-      56: labo.addr.laboBnbAddr, // (to LABO BNB LP ) 
+      56: bgsp.addr.bgspBnbAddr, // (to BGSP BNB LP ) 
     },
-    tokenSymbol: 'LABO',
+    tokenSymbol: 'BGSP',
     tokenAddresses: {
       97: '',
-      56: labo.addr.laboAddr,
+      56: bgsp.addr.bgspAddr,
     },
     quoteTokenSymbol: QuoteToken.BNB,
     quoteTokenAdresses: contracts.wbnb,
     version: 1
   },
   {
-    pid:labo.pids.pidList[23],
+    pid:bgsp.pids.pidList[2],
     risk: 5,
-    lpSymbol: 'LABO-DSL LP',
+    lpSymbol: 'BSFE-BNB LP',
     lpAddresses: {
       97: '',
-      56: '0x9053308f23B98bf5c8B5CbCB15F0e5F29f1E1A62', 
+      56: '0x2fc1fc3dbf746f2c42718753f4ac9866d94466b5', 
     },
-    tokenSymbol: 'LABO',
+    tokenSymbol: 'BSFE',
     tokenAddresses: {
       97: '',
       56: labo.addr.laboAddr,
     },
-    quoteTokenSymbol: QuoteToken.DSL,
-    quoteTokenAdresses: contracts.dsl,
+    quoteTokenSymbol: QuoteToken.WBNB,
+    quoteTokenAdresses: contracts.wbnb,
     version: 1
   },
   {

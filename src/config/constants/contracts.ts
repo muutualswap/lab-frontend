@@ -2,11 +2,11 @@ import labo from "./labo"
 
 export default {
   cake: {
-    56: bgsp.addr.bgspAddr,
+    56: labo.addr.laboAddr,
     97: '',
   },
   masterChef: {
-    56: bgsp.addr.masterChef, // cambiar
+    56: labo.addr.masterChef, // cambiar
     97: '',
   },
   wbnb: {

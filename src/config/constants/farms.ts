@@ -22,7 +22,7 @@ const farms: FarmConfig[] = [
     version: 2
   },
   {
-    pid:bgsp.pids.pidList[1],
+    pid:labo.pids.pidList[1],
     risk: 5,
     lpSymbol: 'BGSP-BNB LP',
     lpAddresses: {

@@ -17,8 +17,8 @@ const masterChef = '0x65FE214382fD9e0d6cF054EeD65C150C88ed6834'
 // LABO RELATED PIDS
 
 const pidLaboBusd = 20
-const pidLaboBnb = 21
-const pidLabo = 9
+const pidLaboBnb = 1
+const pidLabo = 0
 
 // OTHER PIDS THAT ARE REFERENCED THROUGHOUT THE CODE
 
@@ -89,7 +89,7 @@ const labo = {
             6, // DOT-BNB LP [8]
             7, // CAKE-BUSD LP [9]
             8, // CAKE-BNB LP [10]
-            pidLabo, // LABO [11]
+            pidLabo, // LABO [0]
             10, // BUSD [12]
             11, // WBNB [13]
             12, // EGG [14]
@@ -103,7 +103,7 @@ const labo = {
             22, // LABO-GYA [22]
             23, // LABO-DSL [23]
             24, // LABO-BUSD LP V2 [24]
-            25, // LABO-BNB LP V2 [25]
+            25, // LABO-BNB LP V2 [1]
             26, // BUSD-BNB LP V2 [26]
             27, // USDT-BUSD LP V2 [27]
             28, // BTCB-BNB LP V2 [28] 

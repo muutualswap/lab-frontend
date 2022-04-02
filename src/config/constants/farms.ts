@@ -15,7 +15,7 @@ const farms: FarmConfig[] = [
     tokenSymbol: 'LABO',
     tokenAddresses: {
       97: '',
-      56: labo.addr.laboAddr,
+      56: '0xe9f861b22cd5240494ecc14afea02659ec59864f',
     },
     quoteTokenSymbol: QuoteToken.BUSD,
     quoteTokenAdresses: contracts.busd,
@@ -27,12 +27,12 @@ const farms: FarmConfig[] = [
     lpSymbol: 'BGSP-BNB LP',
     lpAddresses: {
       97: '',
-      56: labo.addr.laboBnbAddrV2, // (to BGSP BNB LP ) 
+      56: '0x66bffcac0782200d6276142768f79600a458bb04', // (to BGSP BNB LP ) 
     },
     tokenSymbol: 'BGSP',
     tokenAddresses: {
       97: '',
-      56: labo.addr.laboAddr,
+      56: '0xe9f861b22cd5240494ecc14afea02659ec59864f',
     },
     quoteTokenSymbol: QuoteToken.BNB,
     quoteTokenAdresses: contracts.wbnb,
@@ -191,7 +191,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.wbnb,
     version: 2
   },
-  {
+  /* {
     pid:labo.pids.pidList[0],
     risk: 5,
     lpSymbol: 'LABO-BUSD LP',
@@ -208,7 +208,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
     version: 1
   },
- /* {
+  {
     pid:labo.pids.pidList[1],
     risk: 5,
     lpSymbol: 'BGSP-BNB LP',
@@ -219,7 +219,7 @@ const farms: FarmConfig[] = [
     tokenSymbol: 'BGSP',
     tokenAddresses: {
       97: '',
-      56: labo.addr.laboAddr,
+      56: '0xe9f861b22cd5240494ecc14afea02659ec59864f',
     },
     quoteTokenSymbol: QuoteToken.BNB,
     quoteTokenAdresses: contracts.wbnb,

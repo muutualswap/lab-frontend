@@ -411,7 +411,7 @@ const farms: FarmConfig[] = [
     quoteTokenSymbol: QuoteToken.BNB,
     quoteTokenAdresses: contracts.wbnb,
     version: 1
-  },*/
+  }, */
   {
     pid: labo.pids.pidList[11],
     risk: 5,

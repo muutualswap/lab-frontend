@@ -22,7 +22,7 @@ const farms: FarmConfig[] = [
     version: 2
   },
   {
-    pid:labo.pids.pidList[25],
+    pid:labo.pids.pidList[1],
     risk: 5,
     lpSymbol: 'BGSP-BNB LP',
     lpAddresses: {
@@ -208,7 +208,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
     version: 1
   },
-  {
+ /* {
     pid:labo.pids.pidList[1],
     risk: 5,
     lpSymbol: 'BGSP-BNB LP',
@@ -411,7 +411,7 @@ const farms: FarmConfig[] = [
     quoteTokenSymbol: QuoteToken.BNB,
     quoteTokenAdresses: contracts.wbnb,
     version: 1
-  },
+  },*/
   {
     pid: labo.pids.pidList[11],
     risk: 5,

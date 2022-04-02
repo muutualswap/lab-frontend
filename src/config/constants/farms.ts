@@ -15,7 +15,7 @@ const farms: FarmConfig[] = [
     tokenSymbol: 'LABO',
     tokenAddresses: {
       97: '',
-      56: '0xe9f861b22cd5240494ecc14afea02659ec59864f',
+      56:  labo.addr.laboAddr,
     },
     quoteTokenSymbol: QuoteToken.BUSD,
     quoteTokenAdresses: contracts.busd,

@@ -2,11 +2,11 @@ import labo from "./labo"
 
 export default {
   cake: {
-    56: labo.addr.laboAddr,
+    56: '0xE9F861b22cd5240494ECC14AfEa02659Ec59864f',
     97: '',
   },
   masterChef: {
-    56: labo.addr.masterChef, // cambiar
+    56: '0x65FE214382fD9e0d6cF054EeD65C150C88ed6834', // cambiar
     97: '',
   },
   wbnb: {
@@ -31,6 +31,10 @@ export default {
   },
   bsfe: {
     56: '0x2dea7895fb2addb76a400c859603d40e1cba5472',
+    97: '',
+  },
+  bgsp: {
+    56: '0xE9F861b22cd5240494ECC14AfEa02659Ec59864f',
     97: '',
   },
   gya: {

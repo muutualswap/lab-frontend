@@ -190,7 +190,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.wbnb,
     version: 2
   },
-  {
+ /* {
     pid:labo.pids.pidList[0],
     risk: 5,
     lpSymbol: 'LABO-BUSD LP',
@@ -410,7 +410,7 @@ const farms: FarmConfig[] = [
     quoteTokenSymbol: QuoteToken.BNB,
     quoteTokenAdresses: contracts.wbnb,
     version: 1
-  },
+  }, */
   {
     pid: labo.pids.pidList[11],
     risk: 5,

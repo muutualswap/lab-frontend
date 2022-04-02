@@ -17,8 +17,8 @@ const masterChef = '0x65FE214382fD9e0d6cF054EeD65C150C88ed6834'
 // LABO RELATED PIDS
 
 const pidLaboBusd = 20
-const pidLaboBnb = 1
-const pidLabo = 0
+const pidLaboBnb = 21
+const pidLabo = 9
 
 // OTHER PIDS THAT ARE REFERENCED THROUGHOUT THE CODE
 
@@ -38,7 +38,7 @@ const pendingX = "pendingBGSP"
 
 // USE OUR CUSTOM WAY OF FETCHING PRICE
 
-const fetchAutomatic = true;
+const fetchAutomatic = false;
 const fetchPriceCustom = false;
 
 // BitQuery RESPONSE POSITIONS

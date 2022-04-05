@@ -120,7 +120,7 @@ const labo = {
         ],
     },
     strings: {
-        _BGSPPerBlock,
+        BGSPPerBlock,
         pendingBGSP
     },
     fetch: {

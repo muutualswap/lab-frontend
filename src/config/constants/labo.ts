@@ -77,9 +77,6 @@ const labo = {
     pids: {
         pidLaboBusd, 
         pidLaboBnb,
-        pidBgspBusd,
-        pidBgspBnb,
-        pidBgsp,
         pidLabo,
         pidBnbBusd,
         pidList: [

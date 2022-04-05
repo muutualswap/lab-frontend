@@ -67,7 +67,7 @@ const ApyCalculatorModal: React.FC<ApyCalculatorModalProps> = ({
         </GridItem>
         <GridItem>
           <Text fontSize="12px" bold color="textSubtle" textTransform="uppercase" mb="20px">
-            {TranslateString(999, 'LABO per $1000')}
+            {TranslateString(999, 'BGSP per $1000')}
           </Text>
         </GridItem>
         {/* 1 day row */}
@@ -126,7 +126,7 @@ const ApyCalculatorModal: React.FC<ApyCalculatorModalProps> = ({
         )}
       </Description>
       <Flex justifyContent="center">
-        <LinkExternal href={`https://exchange.pancakeswap.finance/#/add/${liquidityUrlPathParts}`} style={{'color': 'rgb(76, 104, 239)'}}>
+        <LinkExternal href={`https://bigswap.exchange/#/add/${liquidityUrlPathParts}`} style={{'color': 'rgb(76, 104, 239)'}}>
           {TranslateString(999, 'Get')} {lpLabel}
         </LinkExternal>
       </Flex>

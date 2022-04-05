@@ -19,7 +19,7 @@ const masterChef = '0x65FE214382fD9e0d6cF054EeD65C150C88ed6834'
 
 const pidLaboBusd = 20
 const pidLaboBnb = 1
-const pid = 0
+const pidLabo = 0
 
 // OTHER PIDS THAT ARE REFERENCED THROUGHOUT THE CODE
 

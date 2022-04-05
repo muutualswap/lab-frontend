@@ -245,7 +245,7 @@ const NavBar = (props) => {
                     <p>{ ( !cakePriceUsd.isNaN() ? cakePriceUsd.toNumber().toFixed(5).concat("$") : '...loading') }</p></Price>
                   </a></li>
                   <li className="web3li insideMainNav">
-                    <a target="_blank" rel="noreferrer" style={{'width': '100% !important' }} href={ `https://bigswap.exchange/swap?outputCurrency=0xe9f861b22cd5240494ecc14afea02659ec59864f}` } className="nav-links connect">
+                    <a target="_blank" rel="noreferrer"  href="https://bigswap.exchange/swap?outputCurrency=0xe9f861b22cd5240494ecc14afea02659ec59864f" className="nav-links connect">
                       <Button style={{'fontSize': '15px', 'borderRadius': '16px', 'width': '100% !important'}}>
                         <b>Buy BGSP</b>
                       </Button>
@@ -291,7 +291,7 @@ const NavBar = (props) => {
                     <p>{ ( !cakePriceUsd.isNaN() ? cakePriceUsd.toNumber().toFixed(5).concat("$") : '...loading') }</p></Price>
                   </a></li>
                   <li className="web3li">
-                    <a target="_blank" rel="noreferrer" style={{'width': '100% !important' }} href={ `https://bigswap.exchange/swap?outputCurrency=0xe9f861b22cd5240494ecc14afea02659ec59864f}` } className="nav-links connect">
+                    <a target="_blank" rel="noreferrer" href="https://bigswap.exchange/swap?outputCurrency=0xe9f861b22cd5240494ecc14afea02659ec59864f" className="nav-links connect">
                       <Button style={{'fontSize': '15px', 'borderRadius': '16px', 'width': '100% !important'}}>
                         <b>Buy BGSP</b>
                       </Button>

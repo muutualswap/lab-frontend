@@ -1,10 +1,8 @@
 import BigNumber from 'bignumber.js'
 import { useEffect, useMemo } from 'react'
-import labo  from 'config/constants/labo'
-import { useQuery, gql } from '@apollo/client';
 import { useSelector, useDispatch } from 'react-redux'
 import useRefresh from 'hooks/useRefresh'
-import { fetchFarmsPublicDataAsync, fetchPoolsPublicDataAsync, fetchPoolsUserDataAsync, fetchLaboPriceAsync } from './actions'
+import { fetchFarmsPublicDataAsync, fetchPoolsPublicDataAsync, fetchPoolsUserDataAsync } from './actions'
 import { State, Farm, Pool } from './types'
 import { QuoteToken } from '../config/constants/types'
 
@@ -71,60 +69,19 @@ export const usePoolFromPid = (sousId): Pool => {
 // Prices
 
 export const usePriceBnbBusd = (): BigNumber => {
-  const pid = labo.pids.pidBnbBusd // BUSD-BNB LP
+  const pid = 2 // BUSD-BNB LP
   const farm = useFarmFromPid(pid)
   return farm.tokenPriceVsQuote ? new BigNumber(farm.tokenPriceVsQuote) : ZERO
 }
-
-// export const fetchLaboPrice = (): BigNumber => {
-//   const query = `
-//   {ethereum(network: bsc){
-//     address(address: {is: "0xbf9a298a948079bed1e0902e78c61b1b30f58e7e"}){
-//     balances {
-//     currency {
-//     symbol
-//     }
-//     value
-//     }}
-//     }}
-// `;
-// const url = "https://graphql.bitquery.io/";
-// const opts = {
-//     method: "POST",
-//     headers: {
-//         "Content-Type": "application/json"
-//     },
-//     body: JSON.stringify({
-//         query
-//     })
-// };
-
-// fetch(url, opts)
-//   .then(response => response.json())
-//   .then(json => {
-//     if (process.env.REACT_APP_DEBUG === "true") console.log(json.data.ethereum.address[0].balances);
-//   })
-//   .catch(console.error);
-
-//   return new BigNumber(3);
-// }
 
 export const usePriceCakeBusd = (): BigNumber => {
   // const pid = 1 // CAKE-BNB LP
   // const bnbPriceUSD = usePriceBnbBusd()
   // const farm = useFarmFromPid(pid)
   // return farm.tokenPriceVsQuote ? bnbPriceUSD.times(farm.tokenPriceVsQuote) : ZERO
-  // const dispatch = useDispatch()
-  const pid = labo.pids.pidLaboBusd; // EGG-BUSD LP
+  const pid = 0; // EGG-BUSD LP
   const farm = useFarmFromPid(pid);
-  // dispatch(fetchLaboPriceAsync());
-  // const price = useSelector((state: State) => state.farms.price)
-  // if (!labo.fetch.fetchAutomatic){
-  //   return ( !labo.fetch.fetchPriceCustom ? new BigNumber(farm.tokenPriceVsQuote) : new BigNumber(price))
-  // }
-
-  // return ( !( price ? price.isFinite : false ) ? new BigNumber(farm.tokenPriceVsQuote) : new BigNumber(price))
-  return new BigNumber(farm.tokenPriceVsQuote);
+  return farm.tokenPriceVsQuote ? new BigNumber(farm.tokenPriceVsQuote) : ZERO;
 }
 
 export const useTotalValue = (): BigNumber => {
@@ -144,7 +101,6 @@ export const useTotalValue = (): BigNumber => {
         val = (farm.lpTotalInQuoteToken);
       }
       value = value.plus(val);
-
     }
   }
   return value;

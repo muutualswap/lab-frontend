@@ -32,7 +32,7 @@ const countLength = 2
 
 // CHANGE LABO FOR THE TOKEN BEIGN TESTED
 
-const xPerBlock = "BGSPPerBlock" // referenced in getMasterChefAddress()
+const xPerBlock = "_BGSPPerBlock" // referenced in getMasterChefAddress()
 const pendingX = "pendingBGSP"
 
 // SEARCH AND REPLACE THIS STRING IF USING ANY OTHER THAN LABO: await masterChefContract.methods.pendingBGSP in \src\state\pools\fetchPoolsUser.ts
@@ -120,7 +120,7 @@ const labo = {
         ],
     },
     strings: {
-        BGSPPerBlock,
+        _BGSPPerBlock,
         pendingBGSP
     },
     fetch: {

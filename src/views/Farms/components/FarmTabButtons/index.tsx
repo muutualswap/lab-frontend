@@ -27,7 +27,7 @@ const FarmTabButtons = ({ stakedOnly, setStakedOnly, tokenMode }) => {
       </ActionsWrapper>
       { !tokenMode ?
         <Blablabla>
-          Follow <a target="_blanK" rel="noreferrer" href="https://docs.thelab.finance/guides/add-liquidity-labo-wbnb-lp-labo-busd-lp"><GuideLink>these steps</GuideLink></a> to add liquidity and farm with LP tokens.
+          Follow <a target="_blanK" rel="noreferrer" href="https://docs.bigswap.finance/guides/"><GuideLink>these steps</GuideLink></a> to add liquidity and farm with LP tokens.
         </Blablabla>
        : 
        "" 

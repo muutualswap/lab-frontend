@@ -1,5 +1,4 @@
 import BigNumber from 'bignumber.js/bignumber'
-import labo from 'config/constants/labo' 
 
 BigNumber.config({
   EXPONENTIAL_AT: 1000,
@@ -7,6 +6,7 @@ BigNumber.config({
 })
 
 export const CAKE_PER_BLOCK = new BigNumber(2)
+export const BGSP_PER_BLOCK = new BigNumber(2)
 export const BLOCKS_PER_YEAR = new BigNumber(10512000)
 export const BSC_BLOCK_TIME = 3
 

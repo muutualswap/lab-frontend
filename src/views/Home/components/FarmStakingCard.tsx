@@ -71,7 +71,7 @@ const FarmedStakingCard = () => {
   const TranslateString = useI18n()
   const farmsWithBalance = useFarmsWithBalance()
   const cakeBalance = getBalanceNumber(useTokenBalance(getCakeAddress()))
-  const eggPrice = usePriceCakeBusd().toNumber()
+  const cakePrice = usePriceCakeBusd().toNumber()
   const earningsSum = farmsWithBalance.reduce((accum, farm) => {
     return accum + new BigNumber(farm.balance).div(new BigNumber(10).pow(18)).toNumber()
   }, 0)
@@ -118,7 +118,7 @@ const FarmedStakingCard = () => {
                   <CakeWalletBalance cakeBalance={cakeBalance} />
                   {account ? (
                     <div>
-                      <Label>~${(eggPrice * cakeBalance).toFixed(2)}</Label>
+                      <Label>~${(cakePrice * cakeBalance).toFixed(2)}</Label>
                       <Sub>BGSP in Wallet</Sub>
                     </div>
                   ):(<Sub>BGSP in Wallet</Sub>)

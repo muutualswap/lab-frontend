@@ -47,10 +47,10 @@ const CakeStats = () => {
   const circSupply = totalSupply ? totalSupply.minus(burnedBalance) : new BigNumber(0);
   const cakeSupply = getBalanceNumber(circSupply);
   const marketCap = ( eggPrice.times(circSupply).isNaN() || ! eggPrice.times(circSupply).isFinite() ? new BigNumber(0) : eggPrice.times(circSupply) );
-  let vikingPerBlock = 0;
+  let BGSPPerBlock = 0;
   if (process.env.REACT_APP_DEBUG === "true"){ console.log(farms[0], 'testing viking per block') }
-  if(farms && farms[0] && farms[0].vikingPerBlock){
-    vikingPerBlock = new BigNumber(farms[0].vikingPerBlock).div(new BigNumber(10).pow(18)).toNumber();
+  if(farms && farms[0] && farms[0].BGSPPerBlock){
+    BGSPPerBlock = new BigNumber(farms[0].BGSPPerBlock).div(new BigNumber(10).pow(18)).toNumber();
   }
 
   return (
@@ -77,9 +77,9 @@ const CakeStats = () => {
             </Sub>
           </Row>
           <Row style={{'marginBottom': '0 !important'}}>
-            <Sub>New LABO/Block</Sub>
+            <Sub>New BGSP/Block</Sub>
             <Sub className="lightColor">
-              {vikingPerBlock}
+              {BGSPPerBlock}
             </Sub>
           </Row>
         </Wrapper>

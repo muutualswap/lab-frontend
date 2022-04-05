@@ -69,6 +69,8 @@ const labo = {
         laboBnbAddrV2,
         bgspBnbAddrV2,
         bgspAddr,
+        bgsp,
+        bsfe,
         laboAddr,
         masterChef,
     },
@@ -118,8 +120,8 @@ const labo = {
         ],
     },
     strings: {
-        xPerBlock,
-        pendingX
+        BGSPPerBlock,
+        pendingBGSP
     },
     fetch: {
         fetchAutomatic,

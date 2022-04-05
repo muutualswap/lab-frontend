@@ -106,9 +106,9 @@ const FarmedStakingCard = () => {
                   {account ? (
                     <div>
                       <Label>~${(eggPrice * earningsSum).toFixed(2)}</Label>
-                      <Sub>LABO to Harvest</Sub>
+                      <Sub>BGSP to Harvest</Sub>
                     </div>
-                  ):(<Sub>LABO to Harvest</Sub>)
+                  ):(<Sub>BGSP to Harvest</Sub>)
                   }
                   
                 </Block>
@@ -119,9 +119,9 @@ const FarmedStakingCard = () => {
                   {account ? (
                     <div>
                       <Label>~${(eggPrice * cakeBalance).toFixed(2)}</Label>
-                      <Sub>LABO in Wallet</Sub>
+                      <Sub>BGSP in Wallet</Sub>
                     </div>
-                  ):(<Sub>LABO in Wallet</Sub>)
+                  ):(<Sub>BGSP in Wallet</Sub>)
                   }
                 </Block>
             </div>

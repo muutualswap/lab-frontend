@@ -21,15 +21,15 @@ const farms: FarmConfig[] = [
   {
     pid: 1,
     risk: 5,
-    lpSymbol: 'PIG-BNB LP',
+    lpSymbol: 'BGSP-BNB LP',
     lpAddresses: {
       97: '',
-      56: '0xd94cc6d7bbae00cbbb54e8ba06c386732fabd8c8',
+      56: '0x66bffcac0782200d6276142768f79600a458bb04',
     },
-    tokenSymbol: 'PIG',
+    tokenSymbol: 'BGSP',
     tokenAddresses: {
       97: '',
-      56: '0x1590b659D48717F541A19534d3571573eA7A49A5',
+      56: '0xe9f861b22cd5240494ecc14afea02659ec59864f',
     },
     quoteTokenSymbol: QuoteToken.BNB,
     quoteTokenAdresses: contracts.wbnb,
@@ -182,18 +182,18 @@ const farms: FarmConfig[] = [
     pid: 11,
     risk: 5,
     isTokenOnly: true,
-    lpSymbol: 'PIG',
+    lpSymbol: 'BGSP',
     lpAddresses: {
       97: '',
-      56: '0xc11c20cc11f8a7405aee07093290d4a7fb3722b3', // PIG-BUSD LP
+      56: '0xe9f861b22cd5240494ecc14afea02659ec59864f', // PIG-BUSD LP
     },
-    tokenSymbol: 'PIG',
+    tokenSymbol: 'BGSP',
     tokenAddresses: {
       97: '',
-      56: '0x1590b659D48717F541A19534d3571573eA7A49A5',
+      56: '0xe9f861b22cd5240494ecc14afea02659ec59864f',
     },
-    quoteTokenSymbol: QuoteToken.BUSD,
-    quoteTokenAdresses: contracts.busd,
+    quoteTokenSymbol: QuoteToken.BGSP,
+    quoteTokenAdresses: contracts.bgsp,
   },
   {
     pid: 12,

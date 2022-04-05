@@ -105,7 +105,7 @@ const FarmedStakingCard = () => {
                   <CakeHarvestBalance earningsSum={earningsSum}/>
                   {account ? (
                     <div>
-                      <Label>~${(eggPrice * earningsSum).toFixed(2)}</Label>
+                      <Label>~${(cakePrice * earningsSum).toFixed(2)}</Label>
                       <Sub>BGSP to Harvest</Sub>
                     </div>
                   ):(<Sub>BGSP to Harvest</Sub>)
@@ -137,7 +137,7 @@ const FarmedStakingCard = () => {
               style={{'color': 'white', 'borderRadius': '5px !important'}}
             >
               {pendingTx
-                ? TranslateString(548, 'Collecting EGG')
+                ? TranslateString(548, 'Collecting BGSP')
                 : TranslateString(999, `Harvest all (${balancesWithValue.length})`)}
             </Button>
           ) : (

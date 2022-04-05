@@ -43,15 +43,16 @@ const CakeStats = () => {
   const totalSupply = useTotalSupply()
   const burnedBalance = useBurnedBalance(getCakeAddress())
   const farms = useFarms();
-  const eggPrice = usePriceCakeBusd();
+  const cakePrice = usePriceCakeBusd();
   const circSupply = totalSupply ? totalSupply.minus(burnedBalance) : new BigNumber(0);
   const cakeSupply = getBalanceNumber(circSupply);
-  const marketCap = ( eggPrice.times(circSupply).isNaN() || ! eggPrice.times(circSupply).isFinite() ? new BigNumber(0) : eggPrice.times(circSupply) );
+  const marketCap = cakePrice.times(circSupply);
+
   let BGSPPerBlock = 0;
-  if (process.env.REACT_APP_DEBUG === "true"){ console.log(farms[0], 'testing viking per block') }
   if(farms && farms[0] && farms[0].BGSPPerBlock){
     BGSPPerBlock = new BigNumber(farms[0].BGSPPerBlock).div(new BigNumber(10).pow(18)).toNumber();
   }
+
 
   return (
     <StyledCakeStats style={{"boxShadow":"0px 2px 12px -8px rgba(25, 19, 38, 0.1), 0px 1px 1px rgba(25, 19, 38, 0.05)"}}>

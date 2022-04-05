@@ -12,13 +12,14 @@ const laboBnbAddrV2 = '0x66bffcac0782200d6276142768f79600a458bb04'
 const bgspBnbAddrV2 = '0x66bffcac0782200d6276142768f79600a458bb04'
 const laboAddr = '0xe9f861b22cd5240494ecc14afea02659ec59864f'
 const bgspAddr = '0xe9f861b22cd5240494ecc14afea02659ec59864f'
+const bgsp = '0xe9f861b22cd5240494ecc14afea02659ec59864f'
 const masterChef = '0x65FE214382fD9e0d6cF054EeD65C150C88ed6834'
 
 // LABO RELATED PIDS
 
 const pidLaboBusd = 20
-const pidLaboBnb = 1
-const pidLabo = 0
+const pid = 1
+const pid = 0
 
 // OTHER PIDS THAT ARE REFERENCED THROUGHOUT THE CODE
 
@@ -70,13 +71,15 @@ const labo = {
         bgspBnbAddrV2,
         bgspAddr,
         bgsp,
-        bsfe,
         laboAddr,
         masterChef,
     },
     pids: {
         pidLaboBusd, 
         pidLaboBnb,
+        pidBgspBusd,
+        pidBgspBnb,
+        pidBgsp,
         pidLabo,
         pidBnbBusd,
         pidList: [

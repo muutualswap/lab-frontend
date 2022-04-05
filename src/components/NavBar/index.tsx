@@ -97,7 +97,7 @@ const NavBar = (props) => {
             <Card.Body style={{"backgroundColor": "white", "border": "0"}}>
             <ul className="dropdown-items">
                 <li>
-                  <a target="_blanK" rel="noreferrer" href="https://github.com/thelabfinance" className="nav-links">
+                  <a target="_blanK" rel="noreferrer" href="https://github.com/BigSwap-Finance" className="nav-links">
                     <FaGithub /> <span className="dditem">GITHUB</span>
                   </a>
                 </li>
@@ -107,17 +107,17 @@ const NavBar = (props) => {
                   </a>
                 </li>
                 <li>
-                  <a target="_blanK" rel="noreferrer" href="https://docs.thelab.finance" className="nav-links">
+                  <a target="_blanK" rel="noreferrer" href="https://docs.bigswap.finance" className="nav-links">
                     <FaFileAlt /> <span className="dditem">DOCS</span>
                   </a>
                 </li>
                 <li>
-                  <a target="_blanK" rel="noreferrer" href="https://t.me/thelabfinance" className="nav-links">
+                  <a target="_blanK" rel="noreferrer" href="https://t.me/BigSwapArmy" className="nav-links">
                     <FaTelegramPlane /> <span className="dditem">TELEGRAM</span>
                   </a>
                 </li>
                 <li>
-                  <a target="_blanK" rel="noreferrer" href="https://twitter.com/TheLabFinance" className="nav-links">
+                  <a target="_blanK" rel="noreferrer" href="https://twitter.com/BigSwapFinance" className="nav-links">
                     <FaTwitter />  <span className="dditem">TWITTER</span>
                   </a>
                 </li>
@@ -132,7 +132,7 @@ const NavBar = (props) => {
                   </a>
                 </li>
                 <li>
-                  <a target="_blanK" rel="noreferrer" href="https://dex.guru/token/0x171401a3d18b21bfa3f9bf4f9637f3691158365a-bsc" className="nav-links">
+                  <a target="_blanK" rel="noreferrer" href="https://dex.guru/token/0xe9f861b22cd5240494ecc14afea02659ec59864f-bsc" className="nav-links">
                     <FaChartBar />  <span className="dditem">CHART</span>
                   </a>
                 </li>
@@ -191,7 +191,7 @@ const NavBar = (props) => {
                             </Link>
                             <ul className="dropdown-content dropdown-items">
                              <li>
-                                <a target="_blanK" rel="noreferrer" href="https://github.com/thelabfinance" className="nav-links">
+                                <a target="_blanK" rel="noreferrer" href="https://github.com/BigSwap-Finance" className="nav-links">
                                   <FaGithub /> <span className="dditem">GITHUB</span>
                                 </a>
                               </li>
@@ -201,17 +201,17 @@ const NavBar = (props) => {
                                 </a>
                               </li>
                               <li>
-                                <a target="_blanK" rel="noreferrer" href="https://docs.thelab.finance" className="nav-links">
+                                <a target="_blanK" rel="noreferrer" href="https://docs.bigswap.finance" className="nav-links">
                                 <FaFileAlt /> <span className="dditem">DOCS</span>
                                 </a>
                               </li>
                               <li>
-                                <a target="_blanK" rel="noreferrer" href="https://t.me/thelabfinance" className="nav-links">
+                                <a target="_blanK" rel="noreferrer" href="https://t.me/bigswaparmy" className="nav-links">
                                 <FaTelegramPlane /> <span className="dditem">TELEGRAM</span>
                                 </a>
                               </li>
                               <li>
-                                <a target="_blanK" rel="noreferrer" href="https://twitter.com/TheLabFinance" className="nav-links">
+                                <a target="_blanK" rel="noreferrer" href="https://twitter.com/BigSwapFinance" className="nav-links">
                                 <FaTwitter />  <span className="dditem">TWITTER</span>
                                 </a>
                               </li>
@@ -226,7 +226,7 @@ const NavBar = (props) => {
                                 </a>
                               </li>
                               <li>
-                                <a target="_blanK" rel="noreferrer" href="https://dex.guru/token/0x171401a3d18b21bfa3f9bf4f9637f3691158365a-bsc" className="nav-links">
+                                <a target="_blanK" rel="noreferrer" href="https://dex.guru/token/0xe9f861b22cd5240494ecc14afea02659ec59864f-bsc" className="nav-links">
                                 <FaChartBar />  <span className="dditem">CHART</span>
                                 </a>
                               </li>
@@ -236,7 +236,7 @@ const NavBar = (props) => {
                  </ul>
                  <ul className="web3buttons">
                  <li className="web3li insideMainNav">
-                   <a target="_blank" rel="noreferrer" href="https://dex.guru/token/0x171401a3d18b21bfa3f9bf4f9637f3691158365a-bsc" className="nav-links price">
+                   <a target="_blank" rel="noreferrer" href="https://dex.guru/token/0xe9f861b22cd5240494ecc14afea02659ec59864f-bsc" className="nav-links price">
                   <Price
                     style={{ marginRight: '4px',
                             backgroundColor: 'transparent' }}
@@ -245,9 +245,9 @@ const NavBar = (props) => {
                     <p>{ ( !cakePriceUsd.isNaN() ? cakePriceUsd.toNumber().toFixed(5).concat("$") : '...loading') }</p></Price>
                   </a></li>
                   <li className="web3li insideMainNav">
-                    <a target="_blank" rel="noreferrer" style={{'width': '100% !important' }} href={ `https://app.1inch.io/#/56/swap/BNB/${labo.addr.laboAddr}` } className="nav-links connect">
+                    <a target="_blank" rel="noreferrer" style={{'width': '100% !important' }} href={ `https://bigswap.exchange/swap?outputCurrency=0xe9f861b22cd5240494ecc14afea02659ec59864f}` } className="nav-links connect">
                       <Button style={{'fontSize': '15px', 'borderRadius': '16px', 'width': '100% !important'}}>
-                        <b>Buy LABO</b>
+                        <b>Buy BGSP</b>
                       </Button>
                     </a>
                   </li>
@@ -278,7 +278,7 @@ const NavBar = (props) => {
               </nav>
               <ul className="nav-tabs outsideMainNav">
                 <li className="web3li">
-                  <a target="_blank" rel="noreferrer" href="https://dex.guru/token/0x171401a3d18b21bfa3f9bf4f9637f3691158365a-bsc" className="nav-links price">
+                  <a target="_blank" rel="noreferrer" href="https://dex.guru/token/0xe9f861b22cd5240494ecc14afea02659ec59864f-bsc" className="nav-links price">
                   <Price
                     style={{ 
                       marginRight: '4px',
@@ -291,9 +291,9 @@ const NavBar = (props) => {
                     <p>{ ( !cakePriceUsd.isNaN() ? cakePriceUsd.toNumber().toFixed(5).concat("$") : '...loading') }</p></Price>
                   </a></li>
                   <li className="web3li">
-                    <a target="_blank" rel="noreferrer" style={{'width': '100% !important' }} href={ `https://app.1inch.io/#/56/swap/BNB/${labo.addr.laboAddr}` } className="nav-links connect">
+                    <a target="_blank" rel="noreferrer" style={{'width': '100% !important' }} href={ `https://bigswap.exchange/swap?outputCurrency=0xe9f861b22cd5240494ecc14afea02659ec59864f}` } className="nav-links connect">
                       <Button style={{'fontSize': '15px', 'borderRadius': '16px', 'width': '100% !important'}}>
-                        <b>Buy LABO</b>
+                        <b>Buy BGSP</b>
                       </Button>
                     </a>
                   </li>

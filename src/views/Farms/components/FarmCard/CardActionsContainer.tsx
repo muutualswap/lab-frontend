@@ -3,14 +3,12 @@ import BigNumber from 'bignumber.js'
 import styled from 'styled-components'
 import { provider } from 'web3-core'
 import { getContract } from 'utils/erc20'
-import { Button, Flex, Text } from '@pancakeswap-libs/uikit'
+import { Button, Flex, Text } from 'uikit'
 import { Farm } from 'state/types'
 import { useFarmFromPid, useFarmFromSymbol, useFarmUser } from 'state/hooks'
 import useI18n from 'hooks/useI18n'
 import UnlockButton from 'components/UnlockButton'
 import { useApprove } from 'hooks/useApprove'
-import ReactTooltip from 'react-tooltip';
-import labo from 'config/constants/labo'
 import StakeAction from './StakeAction'
 import HarvestAction from './HarvestAction'
 
@@ -60,25 +58,9 @@ const CardActions: React.FC<FarmCardActionsProps> = ({ farm, ethereum, account }
     return isApproved ? (
       <StakeAction stakedBalance={stakedBalance} tokenBalance={tokenBalance} tokenName={lpName} pid={pid} depositFeeBP={depositFeeBP} />
     ) : (
-      <span data-tip data-for='happyFace'>
-      <Button style={{'borderRadius': ( true ? '5px' : '')}} mt="8px" fullWidth disabled={requestedApproval || labo.isLocked.unlockWalletButton} onClick={handleApprove}>
+      <Button mt="8px" fullWidth disabled={requestedApproval} onClick={handleApprove}>
         {TranslateString(999, 'Approve Contract')}
       </Button>
-      {(
-        labo.isLocked.unlockWalletButton 
-        ? 
-      
-        (
-          <ReactTooltip id='happyFace' type='info'>
-          <span style={{'color': 'white'}}>Do not add liquidity yet, this is a test token.</span>
-          </ReactTooltip>
-        )
-        :
-        ''
-        
-      )
-      } 
-      </span>
     )
   }
 
@@ -86,7 +68,8 @@ const CardActions: React.FC<FarmCardActionsProps> = ({ farm, ethereum, account }
     <Action>
       <Flex>
         <Text bold textTransform="uppercase" color="secondary" fontSize="12px" pr="3px">
-          LABO
+          {/* TODO: Is there a way to get a dynamic value here from useFarmFromSymbol? */}
+          BGSP
         </Text>
         <Text bold textTransform="uppercase" color="textSubtle" fontSize="12px">
           {TranslateString(999, 'Earned')}

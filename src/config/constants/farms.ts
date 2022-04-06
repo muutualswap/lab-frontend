@@ -185,15 +185,15 @@ const farms: FarmConfig[] = [
     lpSymbol: 'BGSP',
     lpAddresses: {
       97: '',
-      56: '0xe9f861b22cd5240494ecc14afea02659ec59864f', // PIG-BUSD LP
+      56: '0x66bffcac0782200d6276142768f79600a458bb04', // PIG-BUSD LP
     },
     tokenSymbol: 'BGSP',
     tokenAddresses: {
       97: '',
       56: '0xe9f861b22cd5240494ecc14afea02659ec59864f',
     },
-    quoteTokenSymbol: QuoteToken.BGSP,
-    quoteTokenAdresses: contracts.bgsp,
+    quoteTokenSymbol: QuoteToken.BNB,
+    quoteTokenAdresses: contracts.wbnb,
   },
   {
     pid: 12,

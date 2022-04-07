@@ -179,7 +179,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.wbnb,
   },
   {
-    pid: 11,
+    pid: 12,
     risk: 5,
     isTokenOnly: true,
     lpSymbol: 'BGSP',
@@ -196,7 +196,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.wbnb,
   },
   {
-    pid: 12,
+    pid: 11,
     risk: 1,
     isTokenOnly: true,
     lpSymbol: 'BUSD',

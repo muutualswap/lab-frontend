@@ -8,12 +8,12 @@ const farms: FarmConfig[] = [
     lpSymbol: 'PIG-BUSD LP',
     lpAddresses: {
       97: '',
-      56: '0xc11c20cc11f8a7405aee07093290d4a7fb3722b3',
+      56: '0x66bffcac0782200d6276142768f79600a458bb04',
     },
     tokenSymbol: 'PIG',
     tokenAddresses: {
       97: '',
-      56: '0x1590b659D48717F541A19534d3571573eA7A49A5',
+      56: '0xe9f861b22cd5240494ecc14afea02659ec59864f',
     },
     quoteTokenSymbol: QuoteToken.BUSD,
     quoteTokenAdresses: contracts.busd,
